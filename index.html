@@ -1,0 +1,1042 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-50 transition-colors duration-300 pt-20">
+    <nav
+      id="navbar"
+      class="bg-gray-800 px-4 py-2.5 shadow-md fixed w-full z-10 transition-colors duration-300 top-0"
+    >
+      <div class="container mx-auto flex justify-between items-center">
+        <h1 class="text-white text-lg font-semibold flex gap-1">
+          <i class="ri-briefcase-4-fill"></i>Portfolio
+        </h1>
+        <div class="hidden md:flex space-x-8 justify-center w-full">
+          <a
+            href="#about"
+            class="nav-link text-white relative uppercase text-xs"
+            >About Me</a
+          >
+          <a
+            href="#education"
+            class="nav-link text-white relative uppercase text-xs"
+            >Education</a
+          >
+          <a
+            href="#skills"
+            class="nav-link text-white relative uppercase text-xs"
+            >Skills</a
+          >
+          <a
+            href="#experience"
+            class="nav-link text-white relative uppercase text-xs"
+            >Experience</a
+          >
+          <a
+            href="#projects"
+            class="nav-link text-white relative uppercase text-xs"
+            >Projects</a
+          >
+          <a
+            href="#certifications"
+            class="nav-link text-white relative uppercase text-xs"
+            >Certifications</a
+          >
+        </div>
+        <div class="flex items-center gap-4">
+          <button
+            id="darkModeToggle"
+            class="text-white focus:outline-none pt-2"
+          >
+            <span id="darkModeIcon" class="material-icons">light_mode</span>
+          </button>
+          <button
+            id="navToggle"
+            class="text-white text-xl md:hidden focus:outline-none"
+          >
+            &#9776;
+            <!-- Hamburger icon -->
+          </button>
+          <div
+            id="mobileNav"
+            class="absolute right-0 top-full hidden bg-gray-800 w-52 shadow-lg rounded-b-lg z-20"
+          >
+            <a
+              href="#about"
+              class="block text-white p-2 hover:bg-gray-700 rounded-md"
+              >About Me</a
+            >
+            <a
+              href="#education"
+              class="block text-white p-2 hover:bg-gray-700 rounded-md"
+              >Education</a
+            >
+            <a
+              href="#skills"
+              class="block text-white p-2 hover:bg-gray-700 rounded-md"
+              >Skills</a
+            >
+            <a
+              href="#experience"
+              class="block text-white p-2 hover:bg-gray-700 rounded-md"
+              >Experience</a
+            >
+            <a
+              href="#projects"
+              class="block text-white p-2 hover:bg-gray-700 rounded-md"
+              >Projects</a
+            >
+
+            <a
+              href="#certifications"
+              class="block text-white p-2 hover:bg-gray-700 rounded-md"
+              >Certifications</a
+            >
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Profile Section  -->
+
+    <header
+      id="head"
+      class="flex flex-col items-center justify-center h-32 mt-16"
+    >
+      <img
+        id="profilePic"
+        src="/images/profile-pic.webp"
+        alt="Profile Picture"
+        class="rounded-full w-32 h-32 cursor-pointer shadow-lg transition-transform duration-300 hover:scale-125"
+      />
+      <div id="nameContainer" class="h-8 mt-4 mb-2">
+        <h1 id="name" class="text-3xl font-bold animate-typewriter"></h1>
+      </div>
+      <p class="text-gray-500 text-base">
+        Software Developer | Graphic Designer
+      </p>
+    </header>
+
+    <!-- About Me Section  -->
+
+    <main class="container mx-auto px-4">
+      <section id="about" class="my-10 mt-20 group">
+        <h2 class="text-2xl font-bold mb-4 relative inline-block uppercase">
+          <i class="ri-user-3-line"></i> About Me
+        </h2>
+
+        <p>
+          I am an aspiring software engineer with a passion for developing
+          innovative solutions. I enjoy learning new technologies and working on
+          projects that challenge me.
+        </p>
+      </section>
+
+      <!-- Education Section  -->
+
+      <section id="education" class="my-10 group">
+        <h2 class="text-2xl font-bold mb-4 relative inline-block uppercase">
+          <i class="ri-graduation-cap-line"></i> Education
+        </h2>
+        <ul class="pl-4 ml-3 border-l-2 border-gray-400">
+          <li class="mb-4 relative">
+            <!-- Degree -->
+            <span
+              class="absolute -left-3 top-1 bg-gray-400 rounded-full w-2.5 h-2.5"
+            ></span>
+            <div class="ml-4">
+              <span class="font-black">Degree:</span>
+              Bachelor of Engineering in Computer Science Engineering.
+            </div>
+            <!-- Sub-item for Degree details -->
+            <ul class="pl-6 border-l-2 border-gray-300 mt-2">
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                CGPA: 7.5
+              </li>
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                Completed in 2024
+              </li>
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                VTU Affiliated Govt. Engg. College, Raichur
+              </li>
+            </ul>
+          </li>
+
+          <!-- PUC -->
+          <li class="mb-4 relative">
+            <span
+              class="absolute -left-3 top-1 bg-gray-400 rounded-full w-2.5 h-2.5"
+            ></span>
+            <div class="ml-4"><span class="font-black">PUC:</span> Science</div>
+            <!-- Sub-item for PUC details -->
+            <ul class="pl-6 border-l-2 border-gray-300 mt-2">
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                Result: 80%
+              </li>
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                Completed in 2020
+              </li>
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                Shaheen PU College, Raichur
+              </li>
+            </ul>
+          </li>
+
+          <!-- SSLC -->
+          <li class="relative">
+            <span
+              class="absolute -left-3 top-1 bg-gray-400 rounded-full w-2.5 h-2.5"
+            ></span>
+            <div class="ml-4">
+              <span class="font-black">SSLC</span>
+            </div>
+            <!-- Sub-item for SSLC details -->
+            <ul class="pl-6 border-l-2 border-gray-300 mt-2">
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                Result: 78%
+              </li>
+              <li class="relative mb-2">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                Completed in 2018
+              </li>
+              <li class="relative">
+                <span
+                  class="absolute -left-3 top-1 bg-gray-300 rounded-full w-2.5 h-2.5"
+                ></span>
+                The Little Angels School, Raichur
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Skills Section  -->
+
+      <section id="skills" class="my-10 group">
+        <h2 class="text-2xl font-bold mb-4 relative inline-block uppercase">
+          <i class="ri-settings-5-fill"></i> Skills
+        </h2>
+        <div class="grid grid-cols-4 sm:grid-cols-3 md:grid-cols-8 gap-4">
+          <!-- Skill Card 1 -->
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-red-500">
+              <i class="ri-html5-line text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">HTML</h3>
+          </div>
+
+          <!-- Skill Card 2 -->
+
+          <div
+            class="bg-white p-2 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-blue-500">
+              <i class="ri-css3-line text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">CSS</h3>
+          </div>
+
+          <!-- Skill Card 3 -->
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-yellow-500 mb-1.5">
+              <i class="ri-javascript-line text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">JS</h3>
+          </div>
+
+          <!-- Skill Card 4 -->
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-blue-600">
+              <i class="ri-reactjs-line text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">React</h3>
+          </div>
+
+          <!-- Skill Card 5 -->
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-green-600">
+              <i class="ri-nodejs-line text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">Node.js</h3>
+          </div>
+
+          <!-- Skill Card 6 -->
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-blue-800">
+              <i class="ri-git-branch-line text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">Git</h3>
+          </div>
+
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-blue-500">
+              <i class="ri-tailwind-css-fill text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">Tailwind</h3>
+          </div>
+
+          <div
+            class="bg-white p-4 rounded-lg shadow-sm transition-transform duration-300 hover:shadow-lg flex flex-col items-center w-20 h-20 justify-center text-gray-800"
+          >
+            <div class="text-red-500">
+              <i class="ri-java-fill text-4xl"></i>
+            </div>
+            <h3 class="font-semibold text-md">Java</h3>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience section  -->
+
+      <section id="experience" class="my-10 group">
+        <h2 class="text-2xl font-bold mb-4 relative inline-block uppercase">
+          <i class="ri-briefcase-fill"></i> Experience
+        </h2>
+
+        <!-- Wrapper div with relative positioning for vertical line -->
+        <div class="relative ml-10 -left-6">
+          <!-- Vertical Line -->
+          <div class="absolute top-0 left-0 w-1 h-full bg-gray-300"></div>
+          <!-- Highlighted Line -->
+
+          <!-- Internship 1 -->
+          <div
+            class="mb-8 ml-6 relative transition-transform duration-300 hover:scale-95"
+          >
+            <!-- Colored Dot positioned on the line -->
+            <div
+              class="absolute w-4 h-4 bg-blue-600 rounded-full -left-6"
+            ></div>
+            <!-- Adjusted position of the dot -->
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h3 class="text-xl font-semibold text-blue-600">
+                Intern at Infidata Technologies
+              </h3>
+              <p class="text-gray-500">Aug 2023 - Sep 2023</p>
+              <ul class="list-disc list-outside text-gray-700 m-2 text-base">
+                <li>
+                  Assisted in developing a Java web app using Servlets and JSP
+                  for a resale platform.
+                </li>
+                <li>
+                  Collaborated on features for browsing listings and managing
+                  purchases.
+                </li>
+                <li>
+                  Tested and debugged order processing and email confirmation
+                  features.
+                </li>
+              </ul>
+              <button
+                class="viewCertificateBtn1 block mt-4 bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 transition"
+                data-certificate-src="images/infidata.webp"
+              >
+                <i class="ri-eye-line"></i> View Certificate
+              </button>
+            </div>
+          </div>
+
+          <!-- Internship 2 -->
+          <div
+            class="mb-8 ml-6 relative transition-transform duration-300 hover:scale-95"
+          >
+            <!-- Another colored dot with adjusted positioning -->
+            <div
+              class="absolute w-4 h-4 bg-green-600 rounded-full -left-6"
+            ></div>
+            <!-- Adjusted position of the dot -->
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h3 class="text-xl font-semibold text-green-600">
+                Intern at TechnoSoft
+              </h3>
+              <p class="text-gray-500">Mar 2024 - May 2024</p>
+              <ul class="list-disc list-outside text-gray-700 m-2">
+                <li>
+                  Developed a hybrid approach with Attribute-Based Encryption
+                  for privacy preservation using Python and Django.
+                </li>
+                <li>
+                  Implemented security measures to ensure data privacy within
+                  web applications.
+                </li>
+                <li>
+                  Collaborated with a team to integrate encryption techniques
+                  and enhance application security.
+                </li>
+              </ul>
+              <button
+                class="viewCertificateBtn1 mt-4 bg-green-600 text-white py-2 px-4 rounded hover:bg-green-700 transition"
+                data-certificate-src="/images/TechnoSoft.webp"
+              >
+                <i class="ri-eye-line"></i> View Certificate
+              </button>
+            </div>
+          </div>
+          <!-- Internship 3 -->
+        </div>
+
+        <!-- Modal for Certificate Preview (Common for all) -->
+        <div
+          class="hidden certificateModal fixed inset-0 bg-gray-800 bg-opacity-75 flex items-center justify-center z-50"
+        >
+          <div class="bg-white p-6 rounded-lg shadow-lg max-w-md mx-auto">
+            <h3 class="text-xl font-semibold mb-4 text-gray-500">
+              Certificate Preview
+            </h3>
+            <img
+              class="certificateImage w-full h-auto rounded-lg"
+              alt="Certificate"
+            />
+            <button
+              class="closeModalBtn mt-4 bg-red-600 text-white py-2 px-4 rounded hover:bg-red-700 transition"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Project Section -->
+
+      <section id="projects" class="my-10 group">
+        <h2 class="text-2xl font-bold mb-4 relative inline-block uppercase">
+          <i class="ri-file-code-line"></i> Projects
+        </h2>
+        <div class="grid grid-cols-1 px-4 md:grid-cols-3 lg:grid-cols-3 gap-4">
+          <!-- Card 1 -->
+          <div
+            class="bg-gray-100 p-4 rounded-lg shadow-md text-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <a
+              href="https://shafi3m.github.io/Tic-Tac-Toe/"
+              target="_blank"
+              aria-label="Click to visit example"
+            >
+              <img
+                src="/images/tic.webp"
+                alt="tic-tac-toe"
+                class="w-full h-32 object-cover rounded-t-lg mb-2"
+              />
+            </a>
+
+            <h3 class="font-semibold">Tic-Tac-Toe</h3>
+            <p>
+              A classic fun game with options to play against computer or
+              friend.
+            </p>
+            <div class="flex space-x-2 mt-2">
+              <span
+                class="bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >CSS</span
+              >
+              <span
+                class="bg-yellow-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <a
+                href="https://shafi3m.github.io/Tic-Tac-Toe/"
+                class="text-white bg-blue-500 hover:bg-blue-600 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="View demo of Project 1"
+              >
+                <i class="ri-eye-line mr-2"></i> View Demo
+              </a>
+
+              <a
+                href="https://github.com/shafi3m/Tic-Tac-Toe"
+                class="text-white bg-gray-800 hover:bg-gray-900 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="Visit repository on GitHub"
+              >
+                <i class="ri-github-fill mr-2"></i> Visit Repo
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div
+            class="bg-gray-100 p-4 rounded-lg shadow-md text-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <a
+              href="https://shafi3m.github.io/CurrencyConverter/"
+              target="_blank"
+              aria-label="Click to visit example"
+            >
+              <img
+                src="/images/currency.webp"
+                alt="tic-tac-toe"
+                class="w-full h-32 object-cover rounded-t-lg mb-2"
+              />
+            </a>
+
+            <h3 class="font-semibold">Currency Converter</h3>
+            <p>
+              Real-Time Currency Converter with Country Flags using the APIs
+            </p>
+            <div class="flex space-x-2 mt-2">
+              <span
+                class="bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >CSS</span
+              >
+              <span
+                class="bg-yellow-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <a
+                href="https://shafi3m.github.io/CurrencyConverter/"
+                class="text-white bg-blue-500 hover:bg-blue-600 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="View demo of Project 1"
+              >
+                <i class="ri-eye-line mr-2"></i> View Demo
+              </a>
+
+              <a
+                href="https://github.com/shafi3m/CurrencyConverter"
+                class="text-white bg-gray-800 hover:bg-gray-900 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="Visit repository on GitHub"
+              >
+                <i class="ri-github-fill mr-2"></i> Visit Repo
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div
+            class="bg-gray-100 p-4 rounded-lg shadow-md text-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <a
+              href="https://shafi3m.github.io/Rida-e-Bakhshish/"
+              target="_blank"
+              aria-label="Lyrics Appp"
+            >
+              <img
+                src="/images/lyrics.webp"
+                alt="tic-tac-toe"
+                class="w-full h-32 object-cover rounded-t-lg mb-2"
+              />
+            </a>
+
+            <h3 class="font-semibold">Lyrics App</h3>
+            <p>Islamic Poems Collection Web App with Multi-language Support.</p>
+            <div class="flex space-x-2 mt-2">
+              <span
+                class="bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >CSS</span
+              >
+              <span
+                class="bg-yellow-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <a
+                href="https://shafi3m.github.io/Rida-e-Bakhshish/"
+                class="text-white bg-blue-500 hover:bg-blue-600 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="View demo of Project 3"
+              >
+                <i class="ri-eye-line mr-2"></i> View Demo
+              </a>
+
+              <a
+                href="https://github.com/shafi3m/Rida-e-Bakhshish?tab=readme-ov-file"
+                class="text-white bg-gray-800 hover:bg-gray-900 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="Visit repository on GitHub"
+              >
+                <i class="ri-github-fill mr-2"></i> Visit Repo
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          id="more-projects"
+          class="grid grid-cols-1 p-4 md:grid-cols-3 lg:grid-cols-3 gap-4 hidden"
+        >
+          <!-- Card 4 -->
+          <div
+            class="bg-gray-100 p-4 rounded-lg shadow-md text-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <a
+              href="https://shafi3m.github.io/WeatherApp/"
+              target="_blank"
+              aria-label="WeatherApplication"
+            >
+              <img
+                src="/images/weather.webp"
+                alt="weather"
+                class="w-full h-32 object-cover rounded-t-lg mb-2"
+              />
+            </a>
+
+            <h3 class="font-semibold">Live Weather App</h3>
+            <p>
+              A classic fun game with options to play against the computer or a
+              friend.
+            </p>
+            <div class="flex space-x-2 mt-2">
+              <span
+                class="bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >CSS</span
+              >
+              <span
+                class="bg-yellow-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <a
+                href="https://shafi3m.github.io/WeatherApp/"
+                class="text-white bg-blue-500 hover:bg-blue-600 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="View demo of Project 4"
+              >
+                <i class="ri-eye-line mr-2"></i> View Demo
+              </a>
+
+              <a
+                href="https://github.com/shafi3m/WeatherApp?tab=readme-ov-file"
+                class="text-white bg-gray-800 hover:bg-gray-900 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="Visit repository on GitHub"
+              >
+                <i class="ri-github-fill mr-2"></i> Visit Repo
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 5 Expense Tracker-->
+          <div
+            class="bg-gray-100 p-4 rounded-lg shadow-md text-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <a
+              href="https://shafi3m.github.io/ExpenseTracker/"
+              target="_blank"
+              aria-label="ExpenseTracker"
+            >
+              <img
+                src="/images/darkmode-demo.webp"
+                alt="tic-tac-toe"
+                class="w-full h-32 object-cover rounded-t-lg mb-2"
+              />
+            </a>
+
+            <h3 class="font-semibold">Expense Tracker</h3>
+            <p>
+              Expense Tracker app for managing daily expenses with and local
+              storage.
+            </p>
+            <div class="flex space-x-2 mt-2">
+              <span
+                class="bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >CSS</span
+              >
+              <span
+                class="bg-yellow-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex items-center justify-between mt-4">
+              <a
+                href="https://shafi3m.github.io/ExpenseTracker/"
+                class="text-white bg-blue-500 hover:bg-blue-600 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="View demo of Project 5"
+              >
+                <i class="ri-eye-line mr-2"></i> View Demo
+              </a>
+
+              <a
+                href="https://github.com/shafi3m/ExpenseTracker"
+                class="text-white bg-gray-800 hover:bg-gray-900 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="Visit repository on GitHub"
+              >
+                <i class="ri-github-fill mr-2"></i> Visit Repo
+              </a>
+            </div>
+          </div>
+
+          <!-- project-6  -->
+          <div
+            class="hidden bg-gray-100 p-4 rounded-lg shadow-md text-gray-700 transition-transform duration-300 hover:scale-105 hover:shadow-lg"
+          >
+            <a
+              href="https://shafi3m.github.io/Tic-Tac-Toe/"
+              target="_blank"
+              aria-label="Click to visit example"
+            >
+              <img
+                src="/images/tic.webp"
+                alt="tic-tac-toe"
+                class="w-full h-32 object-cover rounded-t-lg mb-2"
+              />
+            </a>
+
+            <h3 class="font-semibold">Tic-Tac-Toe</h3>
+            <p>
+              A classic fun game with options to play against the computer or a
+              friend.
+            </p>
+            <div class="flex space-x-2 mt-2">
+              <span
+                class="bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >HTML</span
+              >
+              <span
+                class="bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >CSS</span
+              >
+              <span
+                class="bg-yellow-500 text-white text-xs font-semibold rounded-full px-2 py-1"
+                >JavaScript</span
+              >
+            </div>
+            <div class="flex items-center space-x-9 mt-4">
+              <a
+                href="https://shafi3m.github.io/Tic-Tac-Toe/"
+                class="text-white bg-blue-500 hover:bg-blue-600 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="View demo of Project 1"
+              >
+                <i class="ri-eye-line mr-2"></i> View Demo
+              </a>
+
+              <a
+                href="https://github.com/shafi3m/Tic-Tac-Toe"
+                class="text-white bg-gray-800 hover:bg-gray-900 px-1.5 py-1.5 rounded-md inline-flex items-center"
+                target="_blank"
+                aria-label="Visit repository on GitHub"
+              >
+                <i class="ri-github-fill mr-2"></i> Visit Repo
+              </a>
+            </div>
+          </div>
+
+          <!-- Add more project cards as needed -->
+        </div>
+
+        <!-- Show More Button -->
+        <div class="text-center mt-4">
+          <button
+            id="show-more-btn"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600 transition duration-300"
+          >
+            Show More
+          </button>
+        </div>
+      </section>
+
+      <!-- Certification section  -->
+
+      <section id="certifications" class="my-10 relative group">
+        <h2 class="text-2xl font-bold mb-4 relative inline-block uppercase">
+          <i class="ri-shield-star-fill"></i> Certifications
+        </h2>
+
+        <!-- Scroll Left Button -->
+        <button
+          id="scrollLeftBtn"
+          class="absolute left-2 bg-blue-600 text-white p-4 rounded-full shadow-lg z-10"
+        >
+          <i class="ri-arrow-left-s-line text-4xl"></i>
+        </button>
+
+        <!-- Scrollable Cards Container -->
+        <div
+          id="certificationContainer"
+          class="relative flex mx-2 space-x-4 overflow-x-auto snap-x snap-mandatory scrollbar-hide scroll-smooth"
+        >
+          <!-- Card-1 Jspider-->
+          <div
+            class="flip-card perspective min-w-[300px] snap-center p-1 ml-2 transition-transform duration-300 hover:scale-105"
+          >
+            <div class="flip-card-inner">
+              <div
+                class="front p-6 flex flex-col justify-between items-center bg-gray-100 rounded-lg"
+              >
+                <h3 class="font-semibold text-xl text-gray-700">
+                  Jspiders: Basic Foundation of Java & SQL
+                </h3>
+                <a
+                  href="/images/Jspiders.webp"
+                  target="_blank"
+                  class="block hover:bg-gray-100 rounded-lg p-3 transition duration-200"
+                >
+                  <p class="text-blue-400 mb-2 hover:text-blue-600 text-md">
+                    View Certification
+                  </p>
+                </a>
+                <span
+                  class="inline-block bg-blue-500 text-white text-xs font-semibold rounded-full px-2 py-1 mb-2"
+                  >Offline</span
+                >
+              </div>
+              <div
+                class="back absolute backface-hidden flex items-center justify-center w-full h-full"
+              >
+                <img
+                  src="/images/Jspiders.webp"
+                  alt="Certificate"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 2 Git-->
+          <div
+            class="flip-card perspective min-w-[300px] snap-center transition-transform duration-300 hover:scale-105"
+          >
+            <div class="flip-card-inner">
+              <div
+                class="front p-6 flex flex-col justify-between items-center bg-gray-100 rounded-lg"
+              >
+                <h3 class="font-semibold text-xl text-gray-700">
+                  Git & GitHub: Essential Tools for Code Versioning
+                </h3>
+                <a
+                  href="https://www.udemy.com/certificate/UC-5d11a6bf-b36c-458b-98bb-fa74048385b8/"
+                  target="_blank"
+                  class="block hover:bg-gray-100 rounded-lg p-3 transition duration-200"
+                >
+                  <p class="text-blue-400 mb-2 hover:text-blue-600 text-md">
+                    View Git Certification
+                  </p>
+                </a>
+                <span
+                  class="inline-block bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1 mb-2"
+                  >Online</span
+                >
+              </div>
+              <div
+                class="back absolute backface-hidden flex items-center justify-center w-full h-full"
+              >
+                <img
+                  src="/images/git.webp"
+                  alt="Certificate"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 3 Cyber-->
+          <div
+            class="flip-card perspective min-w-[300px] snap-center transition-transform duration-300 hover:scale-105"
+          >
+            <div class="flip-card-inner">
+              <div
+                class="front p-6 flex flex-col justify-between items-center bg-gray-100 rounded-lg"
+              >
+                <h3 class="font-semibold text-xl text-gray-700">
+                  Cybersecurity Bootcamp: Ultimate Beginners course
+                </h3>
+                <a
+                  href="https://www.udemy.com/certificate/UC-e37b12d3-f563-44cf-9bdf-03ab81657881/"
+                  target="_blank"
+                  class="block hover:bg-gray-100 rounded-lg p-3 transition duration-200"
+                >
+                  <p class="text-blue-400 mb-2 hover:text-blue-600 text-md">
+                    View Certification Details
+                  </p>
+                </a>
+                <span
+                  class="inline-block bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1 mb-2"
+                  >Online</span
+                >
+              </div>
+              <div
+                class="back absolute backface-hidden flex items-center justify-center w-full h-full"
+              >
+                <img
+                  src="/images/cyber.webp"
+                  alt="Certificate"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+          <!-- card 4 AI bots-->
+          <div
+            class="flip-card perspective min-w-[300px] snap-center transition-transform duration-300 hover:scale-105"
+          >
+            <div class="flip-card-inner">
+              <div
+                class="front p-6 flex flex-col justify-between items-center bg-gray-100 rounded-lg"
+              >
+                <h3 class="font-semibold text-xl text-gray-700">
+                  Master AI-Powered Chatbots - Appointment Booking
+                </h3>
+                <a
+                  href="https://www.udemy.com/certificate/UC-6aaf3b7b-17f2-447e-a05c-b2b1e6a71a4e/"
+                  target="_blank"
+                  class="block hover:bg-gray-100 rounded-lg p-3 transition duration-200"
+                >
+                  <p class="text-blue-400 mb-2 hover:text-blue-600 text-md">
+                    View AI Chatbot Certificate
+                  </p>
+                </a>
+                <span
+                  class="inline-block bg-green-500 text-white text-xs font-semibold rounded-full px-2 py-1 mb-2"
+                  >Online</span
+                >
+              </div>
+              <div
+                class="back absolute backface-hidden flex items-center justify-center w-full h-full"
+              >
+                <img
+                  src="/images/AI.webp"
+                  alt="Certificate"
+                  class="w-full h-full object-cover rounded-lg"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat for other cards -->
+        </div>
+
+        <!-- Scroll Right Button -->
+        <button
+          id="scrollRightBtn"
+          class="absolute right-2 bg-blue-600 text-white p-4 rounded-full shadow-lg z-10"
+        >
+          <i class="ri-arrow-right-s-line text-4xl"></i>
+        </button>
+      </section>
+    </main>
+
+    <!-- Resume download button  -->
+
+    <div
+      class="flex justify-center mb-6 transition-transform duration-300 hover:scale-105"
+    >
+      <a
+        href="shafi-2024.pdf"
+        class="bg-green-600 text-white py-2 px-6 font-medium rounded-lg shadow-lg hover:bg-blue-600 transition duration-300"
+        download
+        ><i class="ri-download-cloud-fill text-xl"></i> Download Resume</a
+      >
+    </div>
+
+    <footer id="foot" class="bg-gray-800 text-white text-center py-6">
+      <div class="container mx-auto">
+        <p class="mb-4">&copy; tech.shafi2024@gmail.com</p>
+        <div
+          class="flex justify-center space-x-4 transition-transform duration-300 hover:scale-110"
+        >
+          <a
+            href="https://www.instagram.com/shafi_3m/"
+            target="_blank"
+            class="hover:text-blue-400 transition duration-300"
+          >
+            <i class="ri-instagram-fill text-2xl"></i>
+          </a>
+          <a
+            href="https://codepen.io/shafi_3m"
+            target="_blank"
+            class="hover:text-blue-400 transition duration-300"
+          >
+            <i class="ri-codepen-fill text-2xl"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/mohammed-shafi-1b13b4280/"
+            target="_blank"
+            class="hover:text-blue-400 transition duration-300"
+          >
+            <i class="ri-linkedin-fill text-2xl"></i>
+          </a>
+          <a
+            href="https://github.com/shafi3m"
+            target="_blank"
+            class="hover:text-blue-400 transition duration-300"
+          >
+            <i class="ri-github-fill text-2xl"></i>
+          </a>
+          <a
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=shafi.gecr@gmail.com"
+            target="_blank"
+            class="hover:text-red-500 transition duration-300"
+          >
+            <i class="ri-mail-line text-2xl"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

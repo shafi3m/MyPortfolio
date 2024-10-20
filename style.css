@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+/* ----------------------- */
+/* Default (Light Mode) Styles */
+/* ----------------------- */
+body {
+  background-color: white;
+  color: black;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* ----------------------- */
+/* Dark Mode Styles */
+/* ----------------------- */
+body.dark {
+  background-color: #121212; /* Dark background */
+  color: #e0e0e0; /* Light text */
+}
+
+.dark .navbar {
+  background-color: #1f1f1f;
+}
+
+.dark .button {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.dark h1,
+.dark h2 {
+  color: #ffffff;
+}
+
+.dark .footer {
+  background-color: #1f1f1f;
+}
+
+/* Dark mode underline styles */
+.dark #about h2::after,
+.dark #education h2::after,
+.dark #skills h2::after,
+.dark #experience h2::after,
+.dark #projects h2::after,
+.dark #certifications h2::after {
+  background-color: #BB86FC; /* Underline color in dark mode */
+}
+body{
+  font-family: "Montserrat";
+}
+#nam{
+  font-family: "open sans";
+}
+
+
+#about h2::after, .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255); 
+  transition: width 0.3s ease, left 0.3s ease; /* Ensure the transition is here */
+}
+
+.nav-link:hover::after {
+  width: 100%;
+  left: 0;
+}
+
+
+#about h2::after,#education h2::after,#skills h2::after,#experience h2::after,#projects h2::after,#certifications h2::after{
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(0, 0, 0); 
+  transition: width 0.3s ease, left 0.3s ease; /* Ensure the transition is here */
+}
+
+#about:hover h2::after,
+#education:hover h2::after,
+#skills:hover h2::after,
+#experience:hover h2::after,
+#projects:hover h2::after,
+#certifications:hover h2::after {
+  width: 100%; /* Full width on hover */
+  left: 0; /* Align to the left */
+}
+
+/* Triggering Animation on Click */
+.animated h2::after {
+  width: 100%; /* Full width on trigger */
+  left: 0; /* Align to the left */
+  transition: width 0.3s ease, left 0.3s ease; /* Add transition effect */
+}
+
+
+/* ----------------------- */
+/* Cursor Animation */
+/* ----------------------- */
+.cursor {
+  font-weight: bold;
+  animation: blink 0.7s step-end infinite;
+}
+
+section {
+  scroll-margin-top: 80px; /* Adjust this to the height of your navbar */
+}
+
+
+@keyframes blink {
+  from,
+  to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+/* Animation Class */
+@keyframes fadeInUp {
+  from {
+    opacity: 0; /* Start transparent */
+    transform: translateY(20px); /* Start slightly below */
+  }
+  to {
+    opacity: 1; /* Fully opaque */
+    transform: translateY(0); /* Move to original position */
+  }
+}
+.animate {
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+
+
+
+
+
+/* ----------------------- */
+/* Flip Card Styles */
+/* ----------------------- */
+.perspective {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.6s;
+}
+
+.flip-card {
+  position: relative;
+  width: 100%;
+  height: 200px; /* Adjust as needed */
+  cursor: pointer;
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+.flipped .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* ----------------------- */
+/* Scroll Buttons Styles */
+/* ----------------------- */
+#scrollLeftBtn,
+#scrollRightBtn {
+  background: linear-gradient(to right, #3b82f6, #2563eb);
+  color: white; /* White arrow icon */
+  padding: 0.1rem; /* Padding for larger button */
+  border-radius: 50%; /* Rounded buttons */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Shadow for depth */
+  transition: background 0.3s ease, transform 0.3s ease;
+
+  /* Positioning */
+  position: absolute;
+  top: 50%; /* Align vertically */
+  transform: translateY(-1%); /* Centering */
+  z-index: 10; /* Ensure they appear on top */
+
+}
+
+/* #scrollLeftBtn{
+margin-left: -1.2rem;
+}
+#scrollRightBtn{
+  margin-right: -0.6rem;
+} */
+#scrollLeftBtn:hover,
+#scrollRightBtn:hover {
+  background: #1d4ed8; /* Darker blue on hover */
+  transform: translateY(-20%) scale(1.1); /* Slightly enlarge on hover */
+}
+
+/* ----------------------- */
+/* Scroll Container Styles */
+/* ----------------------- */
+#certificationContainer {
+  display: flex;
+  align-items: center; /* Vertically center content */
+  gap: 1.5rem;
+  overflow-x: auto; /* Enable horizontal scroll */
+  scroll-snap-type: x mandatory;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For IE and Edge */
+}
+
+#certificationContainer::-webkit-scrollbar {
+  display: none; /* Hide scrollbar for WebKit browsers */
+}
+
+/* ----------------------- */
+/* Smooth Scrolling */
+/* ----------------------- */
+.scroll-smooth {
+  scroll-behavior: smooth;
+}
+
+
