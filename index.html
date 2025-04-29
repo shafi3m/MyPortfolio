@@ -13,9 +13,104 @@
       href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+    <link rel="stylesheet" href="chatbot/chatbot.min.css">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="bg-gray-50 transition-colors duration-300 pt-20">
+   
+    <!-- === Chatbot Container (Main Wrapper) === -->
+  <div class="chatbot-Container">
+    
+  <!-- === Chatbot Toggle Button (Floating Button) === -->
+  <button id="chatbot-toggler">
+      <!-- Comment Icon -->
+      <span class="material-symbols-rounded">mode_comment</span>
+      <!-- Close Icon -->
+      <span class="material-symbols-rounded">close</span>
+  </button>
+
+  <!-- === Chatbot Popup Window === -->
+  <div class="chatbot-popup">
+
+      <!-- === Chatbot Header (Top Section) === -->
+      <div class="chatbot-header">
+          <div class="header-info">
+              <!-- Bot Icon -->
+              <i class="fa-solid fa-robot chatbot-logo"></i>
+              <!-- Bot Name -->
+              <h2 class="logo-text">AssistAI</h2>
+          </div>
+          
+          <!-- Close Button (Arrow Down) -->
+          <button type="button" class="material-symbols-rounded" id="close-chatbot">
+              keyboard_arrow_down
+          </button>
+      </div>
+      <!-- End of Chatbot Header -->
+
+      <!-- === Chatbot Body (Messages Area) === -->
+      <div class="chatbot-body">
+          
+          <!-- Sample Bot Message -->
+          <div class="message bot-message">
+              <i class="fa-solid fa-robot"></i>
+              <div class="message-text">
+                  Hi there! 👋 <br>
+                  I'm here to help you navigate my portfolio. Whether it's projects, skills, or contact info — just ask me!
+              </div>
+          </div>
+
+          <!-- 
+          (Optional) User and Bot Thinking Message Templates
+           
+          
+          <div class="message user-message">
+              <div class="message-text"></div>
+          </div>
+
+          <div class="message bot-message thinking">
+              <i class="fa-solid fa-robot"></i>
+              <div class="message-text">
+                  <div class="thinking-indicator">
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                      <div class="dot"></div>
+                  </div>
+              </div>
+          </div>
+          -->
+          
+      </div>
+      <!-- End of Chatbot Body -->
+
+      <!-- === Chatbot Footer (Input Area) === -->
+      <div class="chat-footer">
+          <form action="#" class="chat-form">
+              
+              <!-- User Text Input -->
+              <textarea placeholder="Enter a message" class="message-input" required></textarea>
+
+              <!-- Send Button (Shown when input is filled) -->
+              <div class="chat-control">
+                  <button type="submit" class="material-symbols-rounded chat-control" id="sendbtn">
+                      arrow_upward
+                  </button>
+              </div>
+              
+          </form>
+      </div>
+      <!-- End of Chatbot Footer -->
+
+  </div>
+  <!-- End of Chatbot Popup -->
+
+</div>
+<!-- End of Chatbot Container -->
+
+
     <nav
       id="navbar"
       class="bg-gray-800 px-4 py-2.5 shadow-md fixed w-full z-10 transition-colors duration-300 top-0"
@@ -1036,7 +1131,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="chatbot/chatbot.js"></script>
     <script src="script.js"></script>
   </body>
 </html>

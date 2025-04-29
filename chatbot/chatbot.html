@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded" rel="stylesheet" />
+
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+
+<body>
+
+    <button id="chatbot-toggler">
+        <span class="material-symbols-rounded">mode_comment</span>
+        <span class="material-symbols-rounded">close</span>
+
+    </button>
+
+    <!-- chatbot-heaeder -->
+    <div class="chatbot-popup">
+        <div class="chatbot-header">
+            <div class="header-info">
+                <i class="fa-solid fa-robot chatbot-logo"></i>
+                <h2 class="logo-text">Chatbot</h2>
+
+
+            </div>
+            <button type="button" class="material-symbols-rounded" id="close-chatbot"> 
+                keyboard_arrow_down
+
+            </button>
+        </div>
+        <!-- chatbot-body -->
+        <div class="chatbot-body">
+            <div class="message bot-message">
+                <i class="fa-solid fa-robot"></i>
+                <div class="message-text">Hey, there <br> how can I help you today?</div>
+            </div>
+
+            <!-- <div class="message user-message">
+                <div class="message-text"></div>
+            </div>
+
+            <div class="message bot-message thinking">
+                <i class="fa-solid fa-robot"></i>
+                <div class="message-text">
+                    <div class="thinking-indicator">
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                        <div class="dot"></div>
+                    </div>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- chatbot-footer -->
+        <div class="chat-footer">
+            <form action="#" class="chat-form">
+                <textarea placeholder="enter a message" class="message-input" required></textarea>
+                <div class="chat-control">
+                    <button type="submit" class="material-symbols-rounded chat-control" id="sendbtn">
+                        arrow_upward
+
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="chatbot.js"></script>
+</body>
+
+</html>
