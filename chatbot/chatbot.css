@@ -261,6 +261,7 @@ body.show-chatbot .chatbot-popup {
     resize: none;
     padding: 8px 12px;
     font-size: 14px;
+    color: black;
     outline: none;
     background-color: transparent;
     border: none;
